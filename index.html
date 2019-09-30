@@ -31,13 +31,16 @@
           while(index >= 0){
             var tweed = streams.home[index];
             var $tweed = $('<div></div>');
+            var $timestamp = $('<div></div>');
             $tweed.text('@' + tweed.user + ': ' +  tweed.message);
             $tweed.appendTo($div);
+            $timestamp.text(tweed.created_at);
+            $timestamp.appendTo($div);
             index -= 1;
           }
         }
         update();
-        setInterval(update, 500);
+        //setInterval(update, 500);
       });
     </script>
   </body>
