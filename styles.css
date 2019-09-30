@@ -1,6 +1,5 @@
 .body {
-  background: #f0fcfc;
-  font-family: 'Arial', sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -18,7 +17,9 @@
   background-color: #47c4c4;
 }
 .header {
-  background: darkcyan;
+  background:radial-gradient(darkcyan 0, darkcyan 25%, #47c4c4 100%);
+  width: 100%;
+  height:64px;
   color: white;
   font-size: 40px;
   height: 150px;
@@ -29,6 +30,7 @@
 }
 
 .title {
+  background:linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 90%, darkcyan 100%);
   width: 50%;
   border-radius: 10px;
   border-style: solid;
@@ -63,12 +65,22 @@
 }
 
 .message {
+  font-size: 20px;
   font-weight: bold;
+}
+
+.timestamp {
+  color: darkgray;
 }
 
 .username:hover {
   text-decoration: underline;
 }
+
+main {
+background:linear-gradient(to bottom, white 0, #cbeeee 15%, #cbeeee 100%);;
+}
+
 
 div, .tweed-form {
   

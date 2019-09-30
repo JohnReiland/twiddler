@@ -16,10 +16,8 @@
 
     <main>
       <form class="tweed-form">
-        <label for="name">Name</label>
-        <input class="full-width" type="text" id="name" name="name" placeholder="Who this?">
-        <label for="name">Tweed</label>
-        <input class="full-width" type="text" id="name" name="content" placeholder="What are the haps?">
+        <label for="name">visitor</label>
+        <input class="full-width" type="text" id="name" name="content" placeholder=" What are the haps?">
         <button class="button-primary">Tweed</button>
       </form>
       <div class="tweeds">
@@ -34,10 +32,14 @@
         var update =function(){
           $div.html('');
           var index = streams.home.length - 1;
-          while((index >= 0) && (index > streams.home.length - 20)){
-            var tweed = streams.home[index];     
+          while(index >= 0){
+            var tweed = streams.home[index];  
+            if (tweed.user !== "visitor") {
+              index -= 1;
+              continue;
+            }   
 
-            var $user = $('<div class="username"></div>');
+            var $user = $('<div class="username" href="profile.html"></div>');
             $user.text('@' + tweed.user + ': ');
             $user.appendTo($div);
 
@@ -57,7 +59,7 @@
           }
         }
         update();
-        //setInterval(update, 500);
+        setInterval(update, 500);
       });
     </script>
   </body>

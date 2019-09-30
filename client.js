@@ -1,18 +1,15 @@
 const form = document.querySelector('form');
 const tweedsElement = document.querySelector('.tweeds');
+streams.users.visitor = [];
+const visitor = "visitor";
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const formData = new FormData(form);
-  const name = formData.get('name');
-  const content = formData.get('content');
-  const timestamp = new Date();
-  const tweed = {
-    name,
-    content,
-    timestamp
-  };
-
-	console.log(tweed);
+  var formData = new FormData(form);
+  var message = formData.get('content');
+  console.log(visitor, message);
+  if (message !== '') {
+    writeTweet(message);
+  }
   form.reset();
 });
