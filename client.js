@@ -6,9 +6,11 @@ form.addEventListener('submit', (event) => {
   const formData = new FormData(form);
   const name = formData.get('name');
   const content = formData.get('content');
+  const timestamp = new Date();
   const tweed = {
     name,
-    content
+    content,
+    timestamp
   };
 
 	console.log(tweed);

@@ -1,17 +1,76 @@
-.title {
+.body {
+  background: #f0fcfc;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.button-primary {
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: darkcyan;
+  width: 130px;
+  margin-top: 10px;
+}
+.button-primary:hover { 
+  background-color: #47c4c4;
+}
+.header {
+  background: darkcyan;
+  color: white;
+  font-size: 40px;
+  height: 150px;
+  align-items: center;
+  display:flex;
+  justify-content: center;
   text-align: center;
 }
 
+.title {
+  width: 50%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+}
+
 .full-width {
+  height: 30px;
+  font-size: 20px;
   width: 100%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: darkcyan;
 }
 
 .tweed-form {
+  font-size: 20px;
+  padding: 20px;
 	width: 50%;
 	margin: 0 auto;
 }
 
 .tweeds {
+  border-style: solid;
+  border-color: darkcyan;
+  padding: 5px;
+  background-color: white;
+  color: black;
   width: 50%;
   margin: 0 auto;
+
+}
+
+.message {
+  font-weight: bold;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+div, .tweed-form {
+  
+  border-radius: 10px;
 }
