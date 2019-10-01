@@ -1,7 +1,21 @@
+* { padding: 0; margin: 0; }
+
+html, .body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body > * {
+  flex-shrink: 0;
+}
+
 .body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(to bottom, white 0px, white 150px, #cbeeee 650px, #cbeeee 100%);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  font-family: 'PT Sans Caption', sans-serif;
+  
 }
 
 .button-primary {
@@ -9,17 +23,17 @@
   font-size: 20px;
   font-weight: bold;
   color: white;
-  background-color: darkcyan;
+  background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, darkcyan 90%, darkcyan 100%);
   width: 130px;
   margin-top: 10px;
+  outline: none;
 }
 .button-primary:hover { 
-  background-color: #47c4c4;
+  background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 100%);
 }
 .header {
   background:radial-gradient(darkcyan 0, darkcyan 25%, #47c4c4 100%);
   width: 100%;
-  height:64px;
   color: white;
   font-size: 40px;
   height: 150px;
@@ -30,11 +44,15 @@
 }
 
 .title {
-  background:linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 90%, darkcyan 100%);
+  background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 90%, darkcyan 100%);
   width: 50%;
   border-radius: 10px;
   border-style: solid;
   border-color: white;
+}
+.title:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 100%);
 }
 
 .full-width {
@@ -75,12 +93,8 @@
 
 .username:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
-
-main {
-background:linear-gradient(to bottom, white 0, #cbeeee 15%, #cbeeee 100%);;
-}
-
 
 div, .tweed-form {
   
