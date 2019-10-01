@@ -62,6 +62,7 @@ html, .body{
   border-radius: 10px;
   border-style: solid;
   border-color: darkcyan;
+  outline: none;
 }
 
 .tweed-form {
@@ -81,6 +82,13 @@ html, .body{
   margin: 0 auto;
 
 }
+.profile-photo {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: darkcyan;
+  margin: 5px 5px 0px 5px;
+  cursor: pointer;
+}
 
 .message {
   font-size: 20px;
@@ -99,4 +107,18 @@ html, .body{
 div, .tweed-form {
   
   border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  font-size: 40px;
+  height: 150px;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
 }
