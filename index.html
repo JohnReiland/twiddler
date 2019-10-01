@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="client.js"></script>
+    <script src="jquery.timeago.js" type="text/javascript"></script>
   </head>
   <body class="body">
 
@@ -22,14 +24,11 @@
         <button class="button-primary">Tweed</button>
       </form>
 
-      <script src="client.js"></script>
-      <script src="jquery.timeago.js" type="text/javascript"></script>
-      <div class="tweeds">
-        <script class="tweeds">
-
+      <div id="tweeds">
+        <script>
           $(document).ready(function(){
-            var $div = $('div');
-            var update =function(){
+            var $div = $('div#tweeds');
+            var update = function(){
               $div.html('');
               if (focus === undefined) {
                 var index = streams.home.length - 1;
@@ -67,13 +66,15 @@
               }
             }
             update();
-            setInterval(update, 500);
+            setInterval(update, 1000);
           });
         </script>
       </div>
    </main>
+
    <footer>
     <p>&#169 John Reiland 2019</p>
    </footer>
+
   </body>
 </html>
