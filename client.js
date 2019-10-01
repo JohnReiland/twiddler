@@ -5,8 +5,10 @@ const form = document.querySelector('form');
 const tweedsElement = document.querySelector('.tweeds');
 
 function changeFocusTo(user) {
-  focus = user;
-  console.log('focus changed to ', focus);
+  if ((focus === undefined) || (user === undefined)) {
+  	focus = user;
+  }
+  console.log('focus changed to', focus);
 }
 
 
