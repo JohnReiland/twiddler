@@ -44,6 +44,9 @@
                   var tweed = streams.users[focus][index];
                 }
 
+                var $img = $('<img class="profile-photo" src="assets/images/' + tweed.user + '.jpg" alt="profile photo" height="70" width="70" onclick="changeFocusTo(streams.home[' + index + '].user)">');
+                $img.appendTo($div);
+
                 var $user = $('<div class="username" onclick="changeFocusTo(streams.home[' + index + '].user)"></div>');
                 $user.text('@' + tweed.user + ': ');
                 $user.appendTo($div);
@@ -69,5 +72,8 @@
         </script>
       </div>
    </main>
+   <footer>
+    <p>&#169 John Reiland 2019</p>
+   </footer>
   </body>
 </html>
