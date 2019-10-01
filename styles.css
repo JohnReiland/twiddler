@@ -30,6 +30,7 @@ html, .body{
 }
 .button-primary:hover { 
   background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 100%);
+  cursor: pointer;
 }
 .header {
   background:radial-gradient(darkcyan 0, darkcyan 25%, #47c4c4 100%);
@@ -49,10 +50,16 @@ html, .body{
   border-radius: 10px;
   border-style: solid;
   border-color: white;
+  cursor: pointer;
 }
-.title:hover {
+.title:hover span {
+  display: none;
   cursor: pointer;
   background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 100%);
+}
+
+.title:hover:before {
+  content: 'Twidder 🐥️';
 }
 
 .full-width {
