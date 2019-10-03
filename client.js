@@ -11,6 +11,7 @@ function changeFocusTo(user) {
   console.log('focus changed to', focus);
 }
 
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   var formData = new FormData(form);

@@ -79,7 +79,7 @@ html, .body{
 	margin: 0 auto;
 }
 
-#tweeds {
+.tweeds {
   border-style: solid;
   border-color: darkcyan;
   padding: 5px;
