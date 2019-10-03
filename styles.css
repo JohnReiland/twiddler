@@ -52,8 +52,12 @@ html, .body{
 }
 .title:hover {
   cursor: pointer;
-  background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 100%);
+  background: linear-gradient(to bottom, #5ed9d9 0, #47c4c4 10%, #47c4c4 100%);\
 }
+.title:hover span {display:none}
+
+.title:hover:before {content: 'Twidder 🐥️'}
+
 
 .full-width {
   height: 30px;
